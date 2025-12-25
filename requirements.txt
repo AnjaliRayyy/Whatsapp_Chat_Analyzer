@@ -3,5 +3,4 @@ pandas
 matplotlib
 urlextract
 wordcloud
-collections
 emoji
