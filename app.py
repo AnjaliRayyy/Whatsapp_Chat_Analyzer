@@ -7,9 +7,17 @@ import matplotlib.pyplot as plt
 st.set_page_config(
     page_title="WhatsApp Chat Analyzer",
     page_icon="💬",
-    # layout="wide"
+    layout="wide"
 )
-
+# Hide Streamlit UI elements
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # ================= DARK MODE CSS =================
 st.markdown("""
 <style>
